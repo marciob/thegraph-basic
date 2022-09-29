@@ -1,0 +1,5 @@
+type NestedEntity @entity {
+  id: ID!
+  tokenID: BigInt!
+  from: Bytes!
+}
