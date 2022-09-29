@@ -59,4 +59,13 @@ export class NestedEntity extends Entity {
   set from(value: Bytes) {
     this.set("from", Value.fromBytes(value));
   }
+
+  get timestamp(): BigInt {
+    let value = this.get("timestamp");
+    return value!.toBigInt();
+  }
+
+  set timestamp(value: BigInt) {
+    this.set("timestamp", Value.fromBigInt(value));
+  }
 }

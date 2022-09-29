@@ -113,6 +113,8 @@ export function handleNested(event: Nested): void {
 
   nesting.from = event.transaction.from;
 
+  nesting.timestamp = event.block.timestamp;
+
   nesting.save();
 }
 
